@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: sans-serif;
+            margin: auto;
+        }
+
+        .left img {
+            width: 120px;
+            margin: 0px 20px;
+        }
+
+        .left {
+            display: inline-block;
+        }
+        header div{
+            background-color: black;
+            color: rgb(243, 152, 119);
+            padding: 10px;
+            font-size: 20px;
+        }
+        ul{
+            display: flex;
+            justify-content: right;
+            position: absolute;
+            right: 20px;
+            top: -13px;
+        }
+        header li a{
+            color: rgb(255, 226, 198);
+            display: block;
+            padding: 10px;
+            margin-right: 25px;
+            margin-top: 25px;
+            text-decoration: none;
+        }
+        header li a:hover{
+            color: rgb(0,0,0);
+            background-color:  rgb(243, 152, 119);
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div><b>
+        <h2 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Dattaram Foundation</h2>
+        <ul style="list-style-type:none">
+            <li id="l1"><a href="index.html">Home</a></li>
+            <li id="l2"><a href="Notifications.html">Notifications</a></li>
+            <li id="l3"><a href="Events.html">Events</a></li>
+            <li id="l4"><a href="Donations.html">Donations</a></li>
+            <li id="l4"><a href="About.html">About</a></li> 
+        </ul>
+        </div>
+    </header>
+<?php 
+$username = "Attendo"; 
+$password = "teamattendo@vit567"; 
+$database = "csv_db 6"; 
+$mysqli = new mysqli("localhost", $username, $password, $database); 
+$query = "SELECT * FROM attendance ORDER BY Date DESC";
+ 
+ 
+echo '<br><table style="margin-left: auto; 
+margin-right: auto; width:50%; color:#123255; font-weight:bold; 
+font-size:20px; border-collapse: collapse; border:2px solid rgb(255, 100, 82)" 
+border="3" cellspacing="1" cellpadding="5"> 
+      <tr>
+          <td style="color:red;"> <font face="Times">Name</font> </td> 
+          <td style="color:red"> <font face="Times">Date</font> </td> 
+          <td style="color:red"> <font face="Times">Amount</font> </td>
+      </tr>';
+ 
+if ($result = $mysqli->query($query)) {
+    while ($row = $result->fetch_assoc()) {
+        $Name = $row["Name"];
+        $Date = $row["Date"];
+        $Time = $row["Amount"];
+ 
+        echo '<tr> 
+                  <td>'.$Name.'</td> 
+                  <td>'.$Date.'</td> 
+                  <td>'.$Amount.'</td> 
+              </tr>';
+    }
+    $result->free();
+} 
+?>
+</body>
+
+</html>
