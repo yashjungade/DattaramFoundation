@@ -3,26 +3,18 @@
 <head>
 <title>Dattaram Foundation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <style>
 * {box-sizing: border-box}
-
-/* Set height of body and the document to 100% */
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial;
-}
-
-/* Style tab links */
+body,html{width:100%;}
 .tablink {
   font-family: Georgia;
-  background-color: #444;
+  background-color: #222;
   color: white;
   float: left;
   border: none;
@@ -34,6 +26,8 @@ body, html {
 
 }
 
+.thumbnail{
+background-color:rgb(255,255,255)}
 .tablink:hover {
   background-color: #555;
 }
@@ -44,7 +38,10 @@ body, html {
   display: none;
   height: 100%;
 }
-
+@media screen and (max-width: 600px) {
+  .tablink {
+      font-size: 10px;
+  }
 #Home {background-color: white;}
 #Notifications {background-color: white;}
 #Events {background-color: white;}
@@ -52,14 +49,10 @@ body, html {
 #Team {background-color: white;}
 </style>
 </head>
-<body>
-<div style="background-color:rgb(255,200,0)" class="row">
-<div class="col-sm-2" style="text-align:center">
-<img src="Logo.png" alt="Dattaram Foundation" style="display:inline; height:100px"></div>
-<div class="col-sm-9" style="text-align:center">
-<h1 style="display:inline; font-family:Times New Roman Bold; color:rgb(100,0,20); font-size:50px"><b><strong>DATTARAM FOUNDATION</strong></b><h1><p style="font-family:Times"><b>Organization For The People By The People</p>
-</div><br>
-</div>
+<body style="text-align:center">
+<div style="background-color:rgb(255,200,0)">
+
+<div style="display:inline; padding:0px 10px"><h1 style="display:inline; font-family:Times New Roman Bold; color:rgb(100,0,20); font-size:40px"><b><strong>DATTARAM FOUNDATION</strong></b><h1></div>
 </div>
 <div>
 <button class="tablink" onclick="openPage('Home', this, 'black')" id="defaultOpen"><b>Home</button>
@@ -105,20 +98,35 @@ body, html {
     </a>
   </div>
 </div>
-
 </div>
 
-<div style="text-align:center; font-family:Serif" id="Notifications" class="tabcontent"> 
-<table class="table" style="background-color:#444; color:white">
-<tr>Blood Donation Camp></tr><br>
-<tr>Grocery Distribution></tr>
-</table>
+<div style="font-size:20px; font-family:Garamond" id="Notifications" class="tabcontent"> 
+<div style="background-color:rgb(255,250,150); border-radius:20px" class="container">          
+  <table class="table">
+<thead>
+<tr>
+        <td style="width:20%">Date</td>
+        <td style="width:80%">Detail</td>
+      </tr>
+</head>
+    <tbody>
+      <tr>
+        <td></td>
+        <td>Blood Donation Camp</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Grocery Distribution</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 </div>
 <div id="Events" class="tabcontent"> 
 </div>
 
 <div id="Donation" class="tabcontent" style="text-align:center">
-          <img src="Video Payment Details.jpg" class="img-rounded" alt="" style="width:50%; ">
+          <img src="Video Payment Details.jpg" class="img-rounded" alt="" style="width:60%; ">
 </div>
 
 <div id="Team" class="tabcontent">      
@@ -168,7 +176,7 @@ body, html {
       <div class="thumbnail">
           <img src="Yash Jungade.jpg" class="img-rounded" alt="" style="width:100%">
           <div class="caption">
-            <pstyle="font-family:Times; font-size:15px;">Dhiren Sawant</p>
+            <p style="font-family:Times; font-size:15px;">Dhiren Sawant</p>
           </div>
       </div>
     </div>
@@ -222,7 +230,8 @@ body, html {
   </div>
 </div>
 </div>
-</div><br><br><br><br>
+</div>
+</div>
 <script>
 function openPage(pageName,elmnt,color) {
   var i, tabcontent, tablinks;
@@ -241,36 +250,17 @@ function openPage(pageName,elmnt,color) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
-    <footer class=" px-5 bg-dark text-white">
-        <div class="row">
-            <div class="col-6 col-md order-md-1">
 
-                <p style="font-family:Times; font-size:15px" class="mbr-text"><br><strong>Dattaram Foundation</strong>
-                    <br>
-                    <br><br>
-                    <br>
-                </p>
-            </div>
-            <div class="col-6 col-md order-md-2">
-                <p style="font-family:Times; font-size:15px" class="mbr-text"><br><strong>Contact</strong>
-                    <br>
-                    <br><span class="glyphicon glyphicon-phone"></span> 9137012628<br>
-                    <br>
-                </p>
-            </div>
-            <div class="col-6 col-md order-md-3">
-                <p style="font-family:Times; font-size:15px" class="mbr-text"><br><strong>Address</strong>
-                    <br>
-                    <br><span class="glyphicon glyphicon-map-marker"></span> Badlapur, Thane, Maharashtra<br>
-                    <br>
-                </p>
-            </div>
-            <div class="col-6 col-md mt-4 order-md-4">
-                <div class="google-map"><iframe frameborder="0" style="border:0"
-                        src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"
-                        allowfullscreen=""></iframe></div>
-            </div>
-        </div>
-    </footer>  
+
+<br><br>
+<div style="background-color:#222;color:white; text-align:left; padding:15px">
+<p style="font-family:Times; font-size:20px" class="mbr-text"><strong>Dattaram Foundation</strong>
+</p>
+<p style="font-family:Times; font-size:15px" class="mbr-text">
+<span class="glyphicon glyphicon-phone"></span> 9137012628</p>
+<p style="font-family:Times; font-size:15px" class="mbr-text">
+<span class="glyphicon glyphicon-map-marker"></span> Badlapur, Thane, Maharashtra
+</p>
+</div>  
 </body>
 </html> 
