@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dattaram Foundation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  font-family: Georgia;
+  background-color: #444;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 20px;
+  width:20%;
+
+}
+
+.tablink:hover {
+  background-color: #555;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  height: 100%;
+}
+
+#Home {background-color: white;}
+#Notifications {background-color: white;}
+#Events {background-color: white;}
+#Donation {background-color: white;}
+#Team {background-color: white;}
+</style>
+</head>
+<body>
+<div style="background-color:rgb(255,200,0)" class="row">
+<div class="col-sm-2" style="text-align:center">
+<img src="Logo.png" alt="Dattaram Foundation" style="display:inline; height:100px"></div>
+<div class="col-sm-9" style="text-align:center">
+<h1 style="display:inline; font-family:Times New Roman Bold; color:rgb(100,0,20); font-size:50px"><b><strong>DATTARAM FOUNDATION</strong></b><h1><p style="font-family:Times"><b>Organization For The People By The People</p>
+</div><br>
+</div>
+</div>
+<div>
+<button class="tablink" onclick="openPage('Home', this, 'black')" id="defaultOpen"><b>Home</button>
+<button class="tablink" onclick="openPage('Notifications', this, 'black')">Notifications</button>
+<button class="tablink" onclick="openPage('Events', this, 'black')">Events</button>
+<button class="tablink" onclick="openPage('Donation', this, 'black')">Donation</button>
+<button class="tablink" onclick="openPage('Team', this, 'black')">Team</button>
+</div>
+<br><br><br><br><br><br>
+<div id="Home" class="tabcontent">
+<div class="container"> 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="Dattaram Cover.jpg" alt="" style="width:100%">
+      </div>
+
+      <div class="item">
+        <img src="Dattaram Cover.jpg" alt="" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="Dattaram Cover.jpg" alt="" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+</div>
+
+<div style="text-align:center; font-family:Serif" id="Notifications" class="tabcontent"> 
+<table class="table" style="background-color:#444; color:white">
+<tr>Blood Donation Camp></tr><br>
+<tr>Grocery Distribution></tr>
+</table>
+</div>
+<div id="Events" class="tabcontent"> 
+</div>
+
+<div id="Donation" class="tabcontent" style="text-align:center">
+          <img src="Video Payment Details.jpg" class="img-rounded" alt="" style="width:50%; ">
+</div>
+
+<div id="Team" class="tabcontent">      
+<div style="text-align:center; width:60%" class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="thumbnail">
+          <img src="Raj Khetale.jpg" class="img-rounded" alt="" style="width:100%">
+          <div class="caption">
+            <p style="font-family:Times; font-size:15px;"><b>Raj Khetale<br>Founder</b></p>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+          <img src="Yash Jungade.jpg"class="img-rounded" alt="" style="width:100%">
+          <div class="caption">
+            <p style="font-family:Times; font-size:15px;">Yash Jungade</p>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+          <img src="Yash Jungade.jpg" class="img-rounded" alt="" style="width:100%">
+          <div class="caption">
+            <p style="font-family:Times; font-size:15px;">Shubham Phadtare</p>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+          <img src="Yash Jungade.jpg" class="img-rounded" alt="" style="width:100%">
+          <div class="caption">
+            <p style="font-family:Times; font-size:15px;">Rohit Rajguru</p>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+          <img src="Yash Jungade.jpg" class="img-rounded" alt="" style="width:100%">
+          <div class="caption">
+            <p style="font-family:Times; font-size:15px;">Kunal Rohekar</p>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+          <img src="Yash Jungade.jpg" class="img-rounded" alt="" style="width:100%">
+          <div class="caption">
+            <pstyle="font-family:Times; font-size:15px;">Dhiren Sawant</p>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+          <img src="Yash Jungade.jpg" class="img-rounded" alt="" style="width:100%">
+          <div class="caption">
+            <p style="font-family:Times; font-size:15px;"style="font-family:Times; font-size:15px;">Manoj Gosavi</p>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+          <img src="Yash Jungade.jpg" class="img-rounded" alt="" style="width:100%">
+          <div class="caption">
+            <p style="font-family:Times; font-size:15px;">Keshav Khetale</p>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+          <img src="Yash Jungade.jpg" class="img-rounded" alt="" style="width:100%">
+          <div class="caption">
+            <p style="font-family:Times; font-size:15px;">Kaushik Utekar</p>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+          <img src="Yash Jungade.jpg" class="img-rounded" alt="" style="width:100%">
+          <div class="caption">
+            <p style="font-family:Times; font-size:15px;">Aditya Banote</p>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+          <img src="Yash Jungade.jpg" class="img-rounded" alt="" style="width:100%">
+          <div class="caption">
+            <p style="font-family:Times; font-size:15px;">Himanshu Shukla</p>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+          <img src="Yash Jungade.jpg" class="img-rounded" alt="" style="width:100%">
+          <div class="caption">
+            <p style="font-family:Times; font-size:15px;">Anup Maurya</p>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+</div><br><br><br><br>
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    <footer class=" px-5 bg-dark text-white">
+        <div class="row">
+            <div class="col-6 col-md order-md-1">
+
+                <p style="font-family:Times; font-size:15px" class="mbr-text"><br><strong>Dattaram Foundation</strong>
+                    <br>
+                    <br><br>
+                    <br>
+                </p>
+            </div>
+            <div class="col-6 col-md order-md-2">
+                <p style="font-family:Times; font-size:15px" class="mbr-text"><br><strong>Contact</strong>
+                    <br>
+                    <br><span class="glyphicon glyphicon-phone"></span> 9137012628<br>
+                    <br>
+                </p>
+            </div>
+            <div class="col-6 col-md order-md-3">
+                <p style="font-family:Times; font-size:15px" class="mbr-text"><br><strong>Address</strong>
+                    <br>
+                    <br><span class="glyphicon glyphicon-map-marker"></span> Badlapur, Thane, Maharashtra<br>
+                    <br>
+                </p>
+            </div>
+            <div class="col-6 col-md mt-4 order-md-4">
+                <div class="google-map"><iframe frameborder="0" style="border:0"
+                        src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"
+                        allowfullscreen=""></iframe></div>
+            </div>
+        </div>
+    </footer>  
+</body>
+</html> 
