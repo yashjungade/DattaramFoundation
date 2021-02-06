@@ -11,7 +11,7 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <style>
 * {box-sizing: border-box}
-body,html{width:100%;}
+body,html{width:100%; min-height:100vh;}
 .tablink {
   font-family: Georgia;
   background-color: #222;
@@ -232,7 +232,7 @@ function openPage(pageName,elmnt,color) {
 document.getElementById("defaultOpen").click();
 </script>
 <br><br>
-<footer class="footer">
+<footer style="position:sticky; top:100%" class="footer">
   <div style="background-color:#222 ;color:white; text-align:left; padding:15px">
   <p style="font-family:Times; font-size:20px;" class="mbr-text"><strong>Dattaram Foundation</strong>
   </p>
